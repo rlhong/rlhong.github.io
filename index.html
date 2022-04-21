@@ -141,10 +141,26 @@
                     <h2 class="mb-5">Projects</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
+                            <h3 class="mb-0">Sharded Key-Value Distributed Service Using Paxos</h3>
+                            <li>Designed and wrote a fault tolerant sharded key-value database with the use of Paxos for replication in Go</li> 
+                            <li>Each shard's state is replicated using Paxos and a replicated configuration service tells the shards for what key range they are responsible</li>
+			                <li>Core of a real-world design for 1000s of servers</li>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Primary/Backup Key/Value Distributed Storage System</h3>
+                            <li>Designed and wrote a fault tolerant key-value service using a form of primary/backup replication in Go</li> 
+                            <li>Utilizes viewservice that monitors whether each avilable server is alive or dead, assigning servers as primary/backup</li>
+			                <li>Allows for key-value service to work correctly in the presence of network partitions</li>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
                             <h3 class="mb-0">Thread Library</h3>
                             <li>Designed and wrote a C++ thread library, an implementation of threads and monitors in a uniprocessor system</li> 
                             <li>Includes basic monitor functions, such as locking, unlocking, waiting, signaling, etc.</li>
-			    <li>Interface allows for initializing a cpu, creating and swapping threads, and managing thread lifetimes</li>
+			                <li>Interface allows for initializing a cpu, creating and swapping threads, and managing thread lifetimes</li>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
